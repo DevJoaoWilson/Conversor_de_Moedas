@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;300;500&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversor de Moedas</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Conversor De Moedas</h1>
+      </header>
+
+      <main>
+        <div id="description">
+          <section class="group">
+            <label>Converter de:</label>
+            <select id="selection">
+              <option>R$ Real Brasileiro</option>
+              <option>USD Dólar</option>
+              <option>€ Euro</option>
+            </select>
+          </section>
+
+          <section class="group">
+            <label>Converter para:</label>
+            <select id="select">
+              <option>USD Dólar</option>
+              <option>€ Euro</option>
+              <option>R$ Real Brasileiro</option>
+            </select>
+          </section>
+
+          <form id="input-group">
+            <label for="mount">Valor:</label>
+            <input
+              type="number"
+              name=""
+              id="mount"
+              placeholder="R$ 10.000,00"
+            />
+          </form>
+
+          <button type="button" id="btn">Calcular</button>
+        </div>
+
+        <section id="display">
+            <div class="info-group">
+                <p class="text" id="text-value"> Real Brasileiro</p>
+                <p id="cash1">R$ 10.000,00</i></p>
+            </div>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+            <div class="info-group">
+                <p class="text" id="text-value2">Dolar Americano</p>
+              <p id="cash2">USD 10.000,00</i></p>
+            </div>
+
+        </section>
+      </main>
+
+      <script src="/main.js"></script>
+    </div>
+  </body>
+</html>
